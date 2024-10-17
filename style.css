@@ -1,0 +1,496 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    /* font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+nav {
+    display: flex;
+    color: white;
+    background-color: #45085a;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+}
+
+.logo {
+    height: 64px;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+button {
+    cursor: pointer;
+    padding: 8px 32px;
+    border-radius: 8px;
+    border: 1px solid gray;
+}
+
+/* Hero-section */
+
+.hero-headline {
+    font-size: 48px;
+    line-height: 64px;
+    font-weight: 600;
+    color: #ff4500;
+    /* color: #45085a; */
+}
+
+.hero-subHeadline {
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 48px 16px;
+    gap: 32px;
+}
+
+.hero-head {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 96px;
+    gap: 16px;
+}
+
+.hero-btns {
+    display: flex;
+    gap: 32px;
+}
+
+#intro_video {
+    padding: 3rem;
+}
+
+#introVideo {
+    margin-top: 16px;
+    padding: 0 128px;
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+}
+
+.cta_btn, .cta_btn2 {
+    margin: 16px 0;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    background-color: #ff4500;
+    /* background-color: #45085a; */
+    font-size: 32px;
+    padding: 16px 200px;
+    color: white;
+    border: none;
+}
+
+.cta_btn2 {
+    margin: -32px 0 64px 0;
+}
+
+/* SalesLetter */
+
+.salesLetter {
+    padding: 32px 144px;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+.salesLetter_div {
+    margin: 32px 0;
+    display: flex;
+    align-items: center;
+    gap: 48px;
+}
+
+.salesLetter_img {
+    width: 350px;
+    border-radius: 32px;
+}
+
+.salesLetter_img2 {
+    width: 450px;
+    border-radius: 32px;
+}
+
+.salesLetter_img3 {
+    width: 450px;
+    border-radius: 32px;
+}
+
+.salesLetter_para {
+    font-size: 28px;
+    line-height: 36px;
+    margin-bottom: 32px;
+}
+
+.bold_normal {
+    font-weight: 600;
+}
+
+.bold_red {
+    /* color: #45085a; */
+    color: #ff4500;
+    font-weight: 500;
+}
+
+/* Footer */
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: white;
+    gap: 16px;
+    background-color: #45085a;
+    padding: 48px 144px;
+}
+
+.footer-para {
+    font-size: 24px;
+    line-height: 32px;
+}
+
+@media only screen and (max-width: 768px) {
+    .hero {
+        padding: 24px;
+    }
+    .hero-headline {
+        font-size: 24px;
+        line-height: 30px;
+    }
+    .hero-subHeadline {
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .salesLetter {
+        padding: 16px;
+    }
+    .salesLetter_div {
+        margin: 0;
+        flex-direction: column-reverse;
+        padding: 0;
+        gap: 32px;
+    }
+    /* .hero-head, .salesLetter_div {
+        padding: 2rem;
+    } */
+    .cta_btn, .cta_btn2 {
+        padding: 8px 20px;
+        font-size: 20px;
+        margin: 0;
+        margin-bottom: 32px;
+    }
+    #introVideo {
+        margin-top: 0;
+        padding: 0;
+        border-radius: 0;
+    }
+    .hero-head {
+        padding: 0;
+    }
+    .footer {
+        padding: 16px;
+    }
+    .salesLetter_img,
+    .salesLetter_img2,
+    .salesLetter_img3 {
+        width: 90%;
+    }
+    .salesLetter_para {
+        font-size: 18px;
+        line-height: 24px;
+        padding: 0;
+        margin: 0;
+        /* margin-bottom: 16px; */
+    }
+    .footer-para {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .footer-copy {
+        font-size: 12px;
+        margin-bottom: 32px;
+    }
+    iframe {
+        width: 320px;
+        height: 240px;
+    }
+}
+
+/* Companies section */
+
+.companies-hiring {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    padding: 48px 16px;
+}
+
+.companies-logo {
+    height: 48px;
+    width: auto;
+    border: 1px solid gray;
+    border-radius: 8px;
+    padding: 8px 24px;
+}
+
+.companies {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 48px;
+}
+
+/* Jobs */
+
+.job-card-logo {
+    background-color: aliceblue;
+    height: 40px;
+}
+
+.job-card {
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    justify-content: center;
+    gap: 24px;
+    border: 1px solid lightgray;
+    padding: 32px;
+    border-radius: 16px;
+    /* align-items: center; */
+}
+
+.job-card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 48px;
+}
+
+.job-card-top-left {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.job-card-middle {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.job-card-middle-top {
+    display: flex;
+    gap: 24px;
+}
+
+.job-card-middle-bottom {
+    padding-left: 16px;
+}
+
+.job-card-middle-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.job-card-icon {
+    height: 16px;
+}
+
+.job-card-middle-bottom-items {
+    display: flex;
+    font-size: 12px;
+    gap: 24px;
+}
+
+.job-card-middle-center-job-details-page {
+    padding-bottom: 24px;
+    border-bottom: 1px solid rgba(211, 211, 211, 0.551);
+}
+
+.job-card-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.job-card-bottom-right {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+/* Job details */
+
+.job-details {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.job-details-description {
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    gap: 24px;
+    border: 1px solid lightgray;
+    padding: 32px;
+    border-radius: 16px;
+}
+
+.job-details-description-one {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.job-details-description-para {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding-left: 24px;
+}
+
+.job-keypoints-list {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    list-style-type: none;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+li {
+    line-height: 24px;
+}
+
+.job-education,
+.job-skills {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.job-education-list, .job-skills-list {
+    list-style-type: none;
+}
+
+.job-skills-list {
+    display: flex;
+    gap: 24px;
+}
+
+.job-skills-list-item {
+    border: 1px solid rgba(0, 0, 0, 0.31);
+    padding: 4px 12px;
+    border-radius: 14px;
+    font-size: 14px;
+}
+
+.about-company {
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    gap: 12px;
+    border: 1px solid lightgray;
+    padding: 32px;
+    border-radius: 16px;
+}
+
+.about-company-para {
+    line-height: 24px;
+}
+
+h4 {
+    font-weight: 500;
+    color: gray;
+}
+
+/* Form-page */
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 32px 0;
+    gap: 32px;
+}
+
+.form-headline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.name-part {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.name-part-bottom {
+    display: flex;
+    gap: 48px;
+}
+
+input {
+    height: 32px;
+    width: 300px;
+    border-radius: 4px;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+textarea {
+    width: 648px;
+    height: 150px;
+    border-radius: 4px;
+}
+
+.file {
+    display: flex;
+    border: none;
+}
+
+
+

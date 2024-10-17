@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <div class="nav-left">
+            <h1>NMC Nexus</h1>
+        </div>
+        <div class="nav-right">
+            <a href=""><button>Login</button></a>
+            <a href=""><button>Register</button></a>
+        </div>
+    </nav>
+
+    <form action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="65f23414-572b-4076-950b-ad390c93af5c">
+        <div class="form">
+            <div class="form-headline">
+                <h1>Application Form</h1>
+                <p>Fill the form below and submit your job application</p>
+            </div>
+            <div class="name-part">
+                <p>Name</p>
+                <div class="name-part-bottom">
+                    <label for=""> 
+                        <input class="input" type="text" name="First Name" required>
+                        First Name
+                    </label>
+                    <label for="">
+                        <input class="input" type="text" name="Last Name" required>
+                        Last Name
+                    </label>
+                </div>
+            </div>
+
+            <div class="name-part-bottom">
+                <label for=""> Email
+                    <input class="input" type="email" name="Email" required>
+                </label>
+                <label for=""> Phone Number
+                    <input class="input" type="text" name="Phone Number" required>
+                </label>
+            </div>
+
+            <div class="name-part-bottom">
+                <label for=""> Applied Position
+                    <input class="input" type="text" name="Applied Position" required>
+                </label>
+                <label for=""> Earliest possible start date
+                    <input class="input" type="date" name="Start Date" required>
+                </label>
+            </div>
+            
+            <label for=""> Cover Letter
+                <textarea class="input" name="message" required></textarea>
+                Please do not exceed 200 words
+            </label>
+            
+            <div class="resume-part"> 
+                <p>Upload Resume</p>
+                <input class="file" type="file" name="Start Date" required>
+            </div>
+
+            <button type="submit">Apply</button>
+        </div>
+    </form>
+
+    </script>
+</body>
+</html>
