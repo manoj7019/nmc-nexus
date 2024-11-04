@@ -14,3 +14,11 @@ counts.forEach((counter)=> {
     }
     upData()
 })
+
+
+//Year at Copyright
+const year = new Date().getFullYear();
+console.log(year)
+
+let yearText = document.querySelector('#yearText');
+yearText.textContent = year;
