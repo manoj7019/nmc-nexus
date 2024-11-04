@@ -10,6 +10,7 @@ html {
 
 a {
     cursor: pointer;
+    text-decoration: none;
 }
 
 button {
@@ -134,7 +135,8 @@ button:hover {
 
 .card:hover {
     transform: scale(1.05);
-    transition: 0.5s;
+    transition: 0.5s ease-out;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.246);
 }
 
 .card > h2, .card > p {
@@ -270,8 +272,21 @@ button:hover {
     padding: 0 128px 128px 128px;
 }
 
-.home-why-us > .headline {
+.home-why-us-one {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.home-why-us-one > .headline {
     color: #45085a;
+}
+
+.home-why-us-one > .para {
+    font-size: 24px;
+    padding: 0 144px;
+    text-align: center;
 }
 
 .stars {
@@ -362,6 +377,11 @@ button:hover {
 .footer-para {
     font-size: 18px;
     line-height: 24px;
+    color: white;
+}
+
+.footer-para:hover {
+    text-decoration: underline;
 }
 
 .footer-copy {
