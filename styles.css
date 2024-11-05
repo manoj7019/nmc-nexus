@@ -25,6 +25,45 @@ button:hover {
     transition: 0.3s ease-in-out;
 }
 
+/* Navbar  */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 128px;
+    background-color: #45085a;
+    color: white;
+}
+
+nav > a {
+    color: white;
+    flex: 1;
+}
+
+nav > .job-btn > button {
+    padding: 12px 32px;
+    font-size: 24px;
+    border-radius: 12px;
+    background-color: white;
+    color: #ff7919;
+}
+
+.job-btn {
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Navbar Media Query */
+@media only screen and (max-width: 768px) {
+    nav {
+        padding: 16px;
+    }
+    .job-btn {
+        display: none;
+    }
+}
+
 /* Material ui */
 
 .hero {
@@ -33,7 +72,7 @@ button:hover {
     align-items: center;
     width: 100vw;
     gap: 128px;
-    padding: 128px;
+    padding: 64px 128px 128px 128px;
 }
 
 .hero > .left {
@@ -66,6 +105,26 @@ button:hover {
     width: 100%;
 }
 
+/* .hero Media Query */
+@media only screen and (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        padding: 32px 16px 0 16px;
+        gap: 24px;
+    }
+    .hero > .left > h1 {
+        font-size: 28px;
+        color: #45085a;
+    }
+    .hero > .left > h2 {
+        font-size: 20px;
+        font-weight: 500;
+    }
+    .left > button {
+        width: 100%;
+    }
+}
+
 /* About */
 
 .about {
@@ -88,6 +147,48 @@ button:hover {
     margin-top: 24px;
     margin-left: 320px;
     width: 50%;
+}
+
+.about > .right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+.about > .right > button {
+    width: 50%;
+    padding: 12px 32px;
+    font-size: 24px;
+    border-radius: 12px;
+}
+
+/* About media query */
+@media only screen and (max-width: 768px) {
+    .about {
+        flex-direction: column;
+        padding: 32px 16px;
+        gap: 16px;
+    }
+    .about > .left > h2 {
+        font-size: 28px;
+    }
+    .about > .left > p {
+        font-size: 18px;
+    }
+    .about > .left > img {
+        display: none;
+    }
+    .about > .right {
+        gap: 0px;
+    }
+    .about > .right > button {
+        width: 100%;
+    }
+    iframe {
+        width: 320px;
+        height: 240px;
+    }
 }
 
 /* Services */
@@ -117,7 +218,8 @@ button:hover {
 }
 
 .cards {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 48px;
 }
 
@@ -129,7 +231,7 @@ button:hover {
     border-radius: 16px;
     background-color: aliceblue;
     align-items: center;
-    width: 33.3333%;
+    /* width: 33.3333%; */
     text-align: center;
 }
 
@@ -173,6 +275,25 @@ button:hover {
     color: black;
 }
 
+/* Services media query */
+
+@media only screen and (max-width: 768px) {
+    .services {
+        padding: 32px 16px;
+        gap: 24px;
+    }
+    .head > h2 {
+        font-size: 28px;
+    }
+    .head > p {
+        font-size: 18px;
+    }
+    .cards {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 24px;
+    }
+}
+
 /* Team */
 
 .team {
@@ -196,11 +317,56 @@ button:hover {
     width: 100%;
 }
 
+/* .member-one {
+    border-radius: 16px 0 0 0;
+}
+.member-five {
+    border-radius: 0 16px 16px 0;
+}
+.member-eight {
+    border-radius: 0 0 0 16px;
+}
+.member-nine {
+    border-radius: 0 0 16px 0;
+} */
+
+.team > .members {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin: 16px 0;
+}
+
+.team > .members > img {
+    width: 220px;
+}
+
 .team > button {
     width: 25%;
     padding: 12px 32px;
     font-size: 24px;
     border-radius: 12px;
+}
+
+@media only screen and (max-width: 768px) {
+    .team > .members {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .team {
+        padding:32px 16px;
+        text-align: center;
+    }
+    .team > h2 {
+        font-size: 24px;
+    }
+    .team > p {
+        font-size: 18px;
+    }
+    .team > .members > img {
+        width: 30vw;
+    }
+    .team > button {
+        width: 100%;
+    }
 }
 
 /* Reviews */
@@ -260,6 +426,31 @@ button:hover {
 
 .reviews-cards > .one > .logo {
     width: 150px;
+}
+
+@media only screen and (max-width: 768px) {
+    .reviews-cards {
+        margin: 16px 0;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 16px;
+    }
+    .reviews {
+        padding: 64px 16px;
+        text-align: center;
+    }
+    .reviews > h2 {
+        font-size: 28px;
+    }
+    .reviews > p {
+        font-size: 18px;
+    }
+    .reviews-cards > .one {
+        padding: 12px;
+        text-align: left;
+    }
+    .reviews > button {
+        width: 100%;
+    }
 }
 
 /* why us  */
@@ -337,6 +528,28 @@ button:hover {
     align-items: center;
 }
 
+@media only screen and (max-width: 768px) {
+    .home-why-us {
+        padding: 16px;
+        gap: 24px;
+    }
+    .home-why-us-one > .headline {
+        font-size: 28px;
+    }
+    .home-why-us-one > .para {
+        font-size: 18px;
+        padding: 0 16px;
+    }
+    .home-why-us-two {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+    .counter > .logo {
+        height: auto;
+        width: 48px;
+    }
+}
+
 /* Footer */
 
 .logo {
@@ -386,6 +599,21 @@ button:hover {
 
 .footer-copy {
     color: white;
+}
+
+@media only screen and (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        padding: 16px;
+        padding-bottom: 64px;
+        gap: 48px;
+    }
+    .footer > .right {
+        gap: 24px;
+    }
+    .footer > .right > a > i {
+        font-size: 16px;
+    }
 }
 
 /* Privacy */
