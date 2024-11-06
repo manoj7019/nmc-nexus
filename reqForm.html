@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <script defer src="./script.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <button data-modal-target="#modal">Open Modal</button>
+    <div class="modal" id="modal">
+        <div class="modal-header">
+            <div class="title">
+                <h2>Post your requirement</h2>
+                <!-- <p>Just fill this simple form and we'll get in touch with you.</p> -->
+            </div>
+            <button data-close-button class="close-button">&times;</button>
+        </div>
+        <div class="modal-body">
+            <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+
+                <input type="hidden" name="access_key" value="e7aef4fd-1c36-4b14-a88e-331dae7acf21" />
+                <input type="hidden" name="subject" value="New Contact Form Submission from Web3Forms" />
+                <input type="hidden" name="from_name" value="My Website" />
+                <!-- More custom ization options available in the docs: https://docs.web3forms.com -->
+            
+                <div class="form-group-container">
+                  <div class="form-group">
+                    <label for="name" class="form-label">Name</label>
+                    <input id="name" name="name" class="form-input" placeholder="Your name" type="text" required/>
+                  </div>
+                  <div class="form-group">
+                    <label for="name" class="form-label">Company Name</label>
+                    <input id="name" name="company name" class="form-input" placeholder="Your Company name" type="text" required/>
+                  </div>
+                  <div class="form-group">
+                    <label for="email" class="form-label">Email</label>
+                    <input id="email" name="email" class="form-input" placeholder="Your email" type="email" required/>
+                  </div>
+                  <div class="form-group">
+                    <label for="phone" class="form-label">Phone</label>
+                    <input id="phone" name="phone" class="form-input" placeholder="Your number" type="text" required/>
+                  </div>
+                  <div class="form-group">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-textarea" id="message" name="message" placeholder="Short description about you requirement" required></textarea>
+                  </div>
+                </div>
+                <button class="form-submit" type="submit">Send Message</button>
+              </form>
+        </div>
+    </div>
+    <div id="overlay"></div>
+    <a href="./privacyPolicy.html">
+        <p class="footer-copy">&copy; <span id="yearText">2020</span> All rights reserved. Namochetana India Pvt Ltd.</p>
+    </a>
+    
+</body>
+</html>
