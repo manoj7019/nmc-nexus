@@ -65,16 +65,22 @@ function closeModal(modal) {
 
 function myFunction() {
     var x = document.getElementById("myLinks");
+    let close = document.getElementById("close")
+    let open = document.getElementById("open")
+
     if (x.style.display === "flex") {
-      x.style.display = "none";
+        x.style.display = "none";
     } else {
-      x.style.display = "flex";
-      x.style.flexDirection = "column";
-      x.style.alignItems = "center";
-      x.style.gap = "20px";
-      x.style.padding = "20px";
-      x.style.backgroundColor= "#45085a";
-      x.style.color = "white";
-      x.style.transition = "all 1s"
+        // open.style.display = "none"
+        x.style.display = "flex";
+        x.style.flexDirection = "column";
+        x.style.alignItems = "center";
+        x.style.gap = "20px";
+        x.style.borderRadius = "0 0 16px 16px";
+        x.style.padding = "20px";
+        x.style.margin = "0 10px";
+        x.style.backgroundColor= "#45085a";
+        x.style.color = "white";
+        x.style.transition = "all 1s"
     }
   }
