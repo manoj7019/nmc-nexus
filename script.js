@@ -60,3 +60,21 @@ function closeModal(modal) {
     modal.classList.remove('active')
     overlay.classList.remove('active')
 }
+
+// Hamburger menu
+
+function myFunction() {
+    var x = document.getElementById("myLinks");
+    if (x.style.display === "flex") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "flex";
+      x.style.flexDirection = "column";
+      x.style.alignItems = "center";
+      x.style.gap = "20px";
+      x.style.padding = "20px";
+      x.style.backgroundColor= "#45085a";
+      x.style.color = "white";
+      x.style.transition = "all 1s"
+    }
+  }

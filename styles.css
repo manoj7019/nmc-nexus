@@ -59,6 +59,10 @@ nav > .job-btn > button {
     nav {
         padding: 16px;
     }
+    nav a h2{
+        font-size: 16px;
+        font-weight: 500;
+    }
     .job-btn {
         display: none;
     }
@@ -85,6 +89,10 @@ nav > .job-btn > button {
 .hero > .left > h1 {
     font-size: 48px;
     color: #45085a;
+}
+
+.hero > .left > h2 {
+    padding-right: 48px;
 }
 
 .left > button {
@@ -216,6 +224,7 @@ nav > .job-btn > button {
 
 .head > p {
     font-size: 24px;
+    padding: 0 128px;
 }
 
 .cards {
@@ -288,6 +297,7 @@ nav > .job-btn > button {
     }
     .head > p {
         font-size: 18px;
+        padding: 0;
     }
     .cards {
         grid-template-columns: repeat(1, 1fr);
@@ -477,7 +487,7 @@ nav > .job-btn > button {
 
 .home-why-us-one > .para {
     font-size: 24px;
-    padding: 0 144px;
+    padding: 0 162px;
     text-align: center;
 }
 
@@ -812,5 +822,82 @@ nav > .job-btn > button {
     .success > button {
         width: 80%;
         padding: 12px;
+    }
+}
+
+/* Hamburger Menu  */
+
+.topnav {
+    display: flex;
+    justify-content: space-between;
+    background-color: #45085a;
+    padding: 0 128px;
+}
+
+.topnav #myLinks2 {
+    display: flex;
+    gap: 48px;
+}
+    
+#myLinks {
+    display: none;
+}
+
+.topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+}
+
+.topnav a.icon {
+    display: none;
+}
+
+.topnav a:hover {
+    /* background-color: #ddd; */
+    /* color: white; */
+}
+
+.active {
+    /* background-color: #04AA6D; */
+    color: white;
+}
+
+@media only screen and (max-width: 768px) {
+    .topnav {
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+    }
+    .topnav #myLinks2 {
+        display: none;
+    }
+    .topnav #myLinks {
+        display: flex;
+        flex-direction: column;
+        margin-top: 44px;
+        align-items: center;
+    }
+    .topnav a.icon {
+    background: none;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    }
+
+    #myLinks a {
+        color: #fff;
+    }
+
+    i {
+        color: #fff;
+    }
+    
+    .topnav a:hover {
+    /* background-color: #ddd; */
+    /* color: black; */
     }
 }
