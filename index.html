@@ -3,20 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/b3025cfcfa.js" crossorigin="anonymous"></script>
     <title>NMC Nexus</title>
 </head>
 <body>
-    <nav>
-        <div class="nav-left">
-            <h2>Namochetana.com</h2>
-            <a href="./about.html">
-                <button>About Us</button>
-            </a>
+    <div class="topnav">
+        <a href="#home" class="active">
+            <img src="./images/logo.png" alt="">
+        </a>
+        <div id="myLinks2">
+            <a href="./getCandidates.html">I need Candidates</a>
+            <a href="./getAJob.html">I need a Job</a>
+            <a href="#about">About Us</a>
+            <a href="#contact">Contact Us</a>
         </div>
-    </nav>
+      
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars" id="open"></i>
+        </a>
+    </div>
+    <div id="myLinks" class="">
+        <a href="./getCandidates.html">I need Candidates</a>
+        <a href="./getAJob.html">I need a job</a>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact Us</a>
+    </div>
+
     <div class="home-hero">
         <div class="home-hero-part-one">
             <h1 class="hero-headline">Connecting Talent, Creating Opportunities.</h1>
@@ -24,14 +39,14 @@
             <h2 class="hero-subheadline">What are you?</h2>
         </div>
         <div class="home-hero-part-two">
-            <a href="./landingPage.html">
+            <a href="./getCandidates.html">
                 <button class="btn employer-btn">
                     The Employer
                     <i class="fa fa-arrow-right" aria-hidden="true"></i>
                 </button>
             </a>
             <img class="hero-image" src="./images/hero1.png" alt="">
-            <a href="./jobServices.html">
+            <a href="./getAJob.html">
                 <button class="btn jobseeker-btn">
                     The Job seeker
                     <i class="fa fa-arrow-right" aria-hidden="true"></i>

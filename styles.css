@@ -13,6 +13,23 @@ a {
     text-decoration: none;
 }
 
+.apply {
+    width: 50%;
+    border: none;
+    background-color: #ff7919;
+    color: white;
+    padding: 12px 32px;
+    font-size: 24px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+    .apply {
+        width: 100%;
+    }
+}
+
 button {
     width: 50%;
     border: none;
@@ -206,6 +223,7 @@ nav > .job-btn > button {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    text-align: center;
     align-items: center;
     padding: 48px 0;
 }
@@ -366,7 +384,8 @@ nav > .job-btn > button {
     margin-top: 12px;
 }
 
-.card > button {
+.card > button,
+.card-apply {
     font-size: 16px;
     border-radius: 12px;
     padding: 8px 24px;
@@ -482,6 +501,10 @@ nav > .job-btn > button {
     gap: 12px;
 }
 
+#reviews {
+    padding: 128px;
+}
+
 .reviews > h2 {
     color: #45085a;
     font-size: 36px;
@@ -505,6 +528,10 @@ nav > .job-btn > button {
     margin: 48px 0;
 }
 
+.reviews > .apply {
+    width: 25%;
+}
+
 .reviews-cards > .one > p {
     font-size: 16px;
     line-height: 24px;
@@ -518,6 +545,16 @@ nav > .job-btn > button {
     border-radius: 16px;
     gap: 24px;
     /* box-shadow: 1px 2px 6px lightgray; */
+}
+
+.one > .two {
+    display: flex;
+    flex-direction: column;
+}
+
+.two > .logo {
+    width: 150px;
+    margin-left: -20px;
 }
 
 .reviews-cards > .one:hover {
@@ -538,7 +575,7 @@ nav > .job-btn > button {
         grid-template-columns: repeat(1, 1fr);
         gap: 16px;
     }
-    .reviews {
+    .reviews, #reviews {
         padding: 64px 16px;
         text-align: center;
     }
@@ -547,6 +584,9 @@ nav > .job-btn > button {
     }
     .reviews > p {
         font-size: 18px;
+    }
+    .reviews > .apply {
+        width: 100%;
     }
     .reviews-cards > .one {
         padding: 12px;
@@ -641,6 +681,9 @@ nav > .job-btn > button {
         padding: 16px;
         gap: 24px;
     }
+    .job-why-us {
+        padding-top: -100px;
+    }
     .home-why-us-one > .headline {
         font-size: 28px;
     }
@@ -700,7 +743,7 @@ nav > .job-btn > button {
 }
 
 .footer-para {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 24px;
     color: white;
 }
