@@ -36,6 +36,11 @@ a {
     border-radius: 24px;
 }
 
+.myLinks2 #current:hover {
+    background-color: #085a12;
+    color: white;
+}
+
 #icons-group {
     gap: 60px;
 }
@@ -1120,6 +1125,12 @@ label {
 .topnav #myLinks2 {
     display: flex;
     gap: 48px;
+}
+
+#myLinks2 > a:hover {
+    background-color: #45085a;
+    color: white;
+    border-radius: 24px;
 }
     
 #myLinks {
