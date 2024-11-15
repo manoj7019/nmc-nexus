@@ -5,14 +5,14 @@
             "name": "Why 80% of freshers don't get job in their 1st year?",
             "img": "../images/blog6.png",
             "para": "",
-            "link": "./blog1.html"
+            "link": "./blog6.html"
         },
         {
             "id": "5",
             "name": "The only course you need to learn English Speaking",
             "img": "../images/blog5.png",
             "para": "",
-            "link": "./blog1.html"
+            "link": "./blog5.html"
         },
         {
             "id": "4",
@@ -26,7 +26,7 @@
             "name": "Harsh realities of IT Industry you must know",
             "img": "../images/blog3.png",
             "para": "",
-            "link": "./blog1.html"
+            "link": "./blog3.html"
         },
         {
             "id": "2",

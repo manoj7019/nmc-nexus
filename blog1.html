@@ -17,6 +17,7 @@
     <script defer src="./script.js"></script>
 </head>
 <body>
+    <div class="loader"></div>
     <div class="topnav">
         <a href="./index.html" class="active">
             <img src="./images/logo.png" alt="">
@@ -43,23 +44,25 @@
 
     <div class="home-hero" id="blog-single-hero">
         <div class="one">
-            <h1 class="">Why 80% freshers don't get job in their first year?</h1>
+            <h1 class="">3 Bad*ss Books You Must Read</h1>
             <p class="">15 Nov, 2024. Friday</p>
-            <img src="./images/blog6.png" alt="">
+            <img src="./images/blog1.png" alt="">
             <p>
-                As a fresher you’ll be having lot of expectations and you’ll try to search for a PERFECT job. <br><br>
-                But, your dream company cares more about practical experience than your qualification and skills. <br><br>
-                So, what to do?<br><br>
-                Here’s what you can do to land your first job ASAP. <br><br>
-                <b>1. Apply for jobs if they match 20-50% with your dream job</b> <br>
-                As a fresher you have to get into the industry as soon as possible. Because all you need is practical experience. Don’t waste your time trying to find a perfect job. <br><br>
-                <b>2. At your first job, Don’t care too much about the salary</b> <br>
-                Try to get as much knowledge as possible. Build as many skills possible. Give your 100% to the company. Learn implementation. You’ll get noticed. <br><br>
-                <b>3. Don’t be too  specific about job location </b> <br>
-                Just get in. All you need to do is - Take a first step. Just move and start you work. <br><br>
-                This is the easy way to get a job as a fresher.
-                As you get 6 months to 1 year experience, you can start searching for your dream job. <br><br>
-                Share this post if it's helpful.
+                Seems to be a simple question. But sometimes we make it more complicatedStop after reading a single chapter, still you have enough knowledge to get ahead in your career.<br><br>
+
+                <b>1. Skin In The Game - Nassim Nicholas Taleb</b><br>
+                Here's a quote from this book : <br>
+                <i>Avoid taking advice from someone who gives advice for a living unless there is a penalty for their advice.</i> <br><br>
+
+                <b>2. Poor Charlie's Almanack - Charlie Munger</b><br>
+                Here's a quote which goes like : <br>
+                <i>Spend each day trying to be a little wiser than you were when you woke up.</i> <br><br>
+
+                <b>2. Influence : The Psychology of Persuasion - Robert Cialdini</b><br>
+                And the quote : <br>
+                <i>People want more of those things they can have less of.</i> <br><br>
+
+                Don't share this post before reading any of these books.
             </p>
         </div>
     </div>
@@ -94,6 +97,19 @@
             </a>
         </div>
     </div>
+
+    <script>
+        window.addEventListener('load', () => {
+            const loader = document.querySelector(".loader");
+
+            loader.classList.add("loader--hidden");
+
+            loader.addEventListener("transitionend", () => {
+                document.body.removeChild(document.querySelector(".loader"));
+            })
+        })
+
+    </script>
     <!-- <script type="module" src="blogScript.js"></script> -->
     <!-- <script src="./script.js"></script> -->
 </body>

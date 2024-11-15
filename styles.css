@@ -1260,6 +1260,18 @@ label {
     opacity: 0.7;
 }
 
+#blog-single-hero > .one > p {
+    padding: 32px 0;
+    line-height: 36px;
+    text-align: left;
+}
+
+#blog-single-hero > .one > h1 {
+    text-align: center;
+    line-height: 56px;
+}
+
+
 @media only screen and (max-width: 768px) {
     #blog-hero {
         padding: 16px;
@@ -1284,11 +1296,43 @@ label {
     #blog-single-hero > .one > p {
         text-align: left;
     }
+    #blog-single-hero > .one > h1 {
+        line-height: 40px;
+        font-size: 28px;
+    }
 }
 
-#blog-single-hero > .one > p {
-    padding: 32px 0;
-    line-height: 36px;
-    text-align: left;
+/* Loader */
+
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    z-index: 10000;
 }
 
+.loader--hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.loader::after {
+    content: "";
+    width: 50px;
+    height: 50px;
+    border: 10px solid #45085a;
+    border-top-color: #ff7919;
+    border-radius: 50%;
+    animation: loading 0.75s ease infinite;
+}
+
+@keyframes loading {
+    from { transform: rotate(0turn) }
+    to { transform: rotate(1turn) }
+}

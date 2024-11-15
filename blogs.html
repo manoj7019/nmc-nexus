@@ -17,6 +17,7 @@
     <script defer src="./script.js"></script>
 </head>
 <body>
+    <div class="loader"></div>
     <div class="topnav">
         <a href="./index.html" class="active">
             <img src="./images/logo.png" alt="">
@@ -79,6 +80,18 @@
             </a>
         </div>
     </div>
+
+    <script>
+        window.addEventListener('load', () => {
+            const loader = document.querySelector(".loader");
+
+            loader.classList.add("loader--hidden");
+
+            loader.addEventListener("transitionend", () => {
+                document.body.removeChild(document.querySelector(".loader"));
+            })
+        })
+    </script>
 
     <script type="module" src="blogScript.js"></script>
     <!-- <script src="./script.js"></script> -->
