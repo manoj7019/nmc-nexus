@@ -1271,6 +1271,19 @@ label {
     line-height: 56px;
 }
 
+.other-article-headline {
+    padding: 0 144px;
+}
+
+#blogLinks {
+    display: flex;
+    flex-direction: column;
+    font-size: 24px;
+    padding: 48px 144px;
+    gap: 16px;
+    text-decoration: underline;
+}
+
 
 @media only screen and (max-width: 768px) {
     #blog-hero {
@@ -1299,6 +1312,16 @@ label {
     #blog-single-hero > .one > h1 {
         line-height: 40px;
         font-size: 28px;
+    }
+    .other-article-headline {
+        padding: 16px;
+    }
+    #blogLinks {
+        font-size: 18px;
+        padding: 16px;
+        padding-bottom: 64px;
+        gap: 16px;
+        text-decoration: underline;
     }
 }
 
@@ -1336,3 +1359,5 @@ label {
     from { transform: rotate(0turn) }
     to { transform: rotate(1turn) }
 }
+
+
