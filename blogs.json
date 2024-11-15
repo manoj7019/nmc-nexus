@@ -19,7 +19,7 @@
             "name": "I am confused where should I apply for job?",
             "img": "../images/blog4.png",
             "para": "",
-            "link": "./blog1.html"
+            "link": "./blog4.html"
         },
         {
             "id": "3",
@@ -33,7 +33,7 @@
             "name": "Best way to answer 'Tell me about yourself'",
             "img": "../images/blog2.png",
             "para": "",
-            "link": "./blog1.html"
+            "link": "./blog2.html"
         },
         {
             "id": "1",
