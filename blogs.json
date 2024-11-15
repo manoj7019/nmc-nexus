@@ -1,0 +1,46 @@
+{
+    "blogs" : [
+        {
+            "id": "6",
+            "name": "Why 80% of freshers don't get job in their 1st year?",
+            "img": "../images/blog6.png",
+            "para": "",
+            "link": "./blog1.html"
+        },
+        {
+            "id": "5",
+            "name": "The only course you need to learn English Speaking",
+            "img": "../images/blog5.png",
+            "para": "",
+            "link": "./blog1.html"
+        },
+        {
+            "id": "4",
+            "name": "I am confused where should I apply for job?",
+            "img": "../images/blog4.png",
+            "para": "",
+            "link": "./blog1.html"
+        },
+        {
+            "id": "3",
+            "name": "Harsh realities of IT Industry you must know",
+            "img": "../images/blog3.png",
+            "para": "",
+            "link": "./blog1.html"
+        },
+        {
+            "id": "2",
+            "name": "Best way to answer 'Tell me about yourself'",
+            "img": "../images/blog2.png",
+            "para": "",
+            "link": "./blog1.html"
+        },
+        {
+            "id": "1",
+            "name": "3 Must-read Bad*ss Books to get little bit ahead in your career",
+            "img": "../images/blog1.png",
+            "para": "",
+            "link": "./blog1.html"
+        }
+    ]
+}

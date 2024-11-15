@@ -2,13 +2,7 @@
 <html lang="en">
 <head>
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KL2F1GSTQB"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-KL2F1GSTQB');
-    </script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-T2JMRZKMEL"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css">
@@ -30,9 +24,9 @@
         <div id="myLinks2">
             <a href="./getCandidates.html">I need Candidates</a>
             <a href="./getAJob.html">I need a job</a>
-            <a href="./blogs.html">Blog</a>
+            <a id="current" href="./blogs.html">Blog</a>
             <!-- <a href="#about">About Us</a> -->
-            <a id="current" href="./contact.html">Contact Us</a>
+            <a href="./contact.html">Contact Us</a>
         </div>
       
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
@@ -42,64 +36,19 @@
     <div id="myLinks" class="">
         <a href="./getCandidates.html">I need Candidates</a>
         <a href="./getAJob.html">I need a job</a>
-        <a href="./blogs.html">Blog</a>
+        <a id="current" href="./blogs.html">Blog</a>
         <!-- <a href="#about">About Us</a> -->
-        <a id="current" href="./contact.html">Contact Us</a>
+        <a href="./contact.html">Contact Us</a>
     </div>
 
-    <div class="home-hero">
+    <div class="home-hero" id="blog-hero">
         <div class="one">
-            <h1 class="">Get in touch with us. Anytime.</h1>
-            <!-- <p class="">Bridging gap between skilled professionals & growing organizations.</p> -->
-            <!-- <h2 class="">What are we?</h2> -->
+            <h1 class="">Here you can pick some pieces of wisdom.</h1>
+            <p class="">These blogs will help you to get some practical advice.</p>
         </div>
-    
-        <div class="three">
-            <h2>Choose options below, to procced.</h2>
-            <div class="home-proceed">
-                <a href="./getAJob.html" class="home-proceed-btn">Apply for a Job</a>
-                <a href="./getCandidates.html" class="home-proceed-btn">Get the Candidates</a>
-            </div>
-        </div>
-
-        <!-- <div class="two">
-            <img src="./images/mainImg.png" alt="">
-        </div> -->
     </div>
-    
-    <div class="home-hero">
-        <div class="one">
-            <h1 class="">Our Social.</h1>
-            <!-- <p class="">Bridging gap between skilled professionals & growing organizations.</p> -->
-            <!-- <h2 class="">What are we?</h2> -->
-        </div>
-    
-        <div class="three">
-            <!-- <h2>To proceed, select what are you?</h2> -->
-            <div class="home-proceed" id="icons-group">
-                <a href="tel:+91-9986742379">
-                    <i class="fi fi-rr-phone-call" style="color:rgb(0, 131, 183); font-size: 160px;"></i>
-                </a>
-                <a href="https://www.linkedin.com/company/namochetana-india-private-limited/?viewAsMember=true">
-                    <i class="fi fi-brands-linkedin" style="color: #0077B5; font-size: 160px;"></i>
-                </a>
-                <a href="mailto:support@namochetana.com">
-                    <i class="fi fi-rr-envelope" style="color:red; font-size: 160px;"></i>
-                </a>
-                <a href="https://wa.me/919986742379">
-                    <i class="fi fi-brands-whatsapp" style="color:green; font-size: 160px;"></i>
-                </a>
-                <a href="https://www.instagram.com/namochetanaindia/">
-                    <i class="fi fi-brands-instagram" style="color:rgb(255, 1, 107); font-size: 160px;"></i>
-                </a>
-            </div>
-        </div>
 
-        <!-- <div class="two">
-            <img src="./images/mainImg.png" alt="">
-            <p>A talent connect platform for companies to get skilled professionals and Skilled professionals their perfect jobs.</p> 
-        </div> -->
-
+    <div id="allBlogs">
     </div>
 
     <div class="footer">
@@ -131,6 +80,7 @@
         </div>
     </div>
 
+    <script type="module" src="blogScript.js"></script>
     <!-- <script src="./script.js"></script> -->
 </body>
 </html>
