@@ -264,7 +264,7 @@
             <button data-close-button class="close-button">&times;</button>
         </div>
         <div class="modal-body">
-            <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+            <form class="contact-form" id="form" method="POST">
 
                 <input type="hidden" name="access_key" value="e7aef4fd-1c36-4b14-a88e-331dae7acf21" />
                 <input type="hidden" name="subject" value="New Contact Form Submission from Web3Forms" />
@@ -294,6 +294,8 @@
                   </div>
                 </div>
                 <button class="form-submit" type="submit">Send Message</button>
+
+                <div id="result"></div>
               </form>
         </div>
     </div>
@@ -309,6 +311,47 @@
                 document.body.removeChild(document.querySelector(".loader"));
             })
         })
+    </script>
+
+    <script>
+        const form = document.getElementById('form');
+        const result = document.getElementById('result');
+
+        form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        const formData = new FormData(form);
+        const object = Object.fromEntries(formData);
+        const json = JSON.stringify(object);
+        result.innerHTML = "Please wait..."
+
+            fetch('https://api.web3forms.com/submit', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'Accept': 'application/json'
+                    },
+                    body: json
+                })
+                .then(async (response) => {
+                    let json = await response.json();
+                    if (response.status == 200) {
+                        result.innerHTML = json.message;
+                    } else {
+                        console.log(response);
+                        result.innerHTML = json.message;
+                    }
+                })
+                .catch(error => {
+                    console.log(error);
+                    result.innerHTML = "Something went wrong!";
+                })
+                .then(function() {
+                    form.reset();
+                    setTimeout(() => {
+                        result.style.display = "none";
+                    }, 3000);
+                });
+        });
     </script>
 
     <!-- <script src="./script.js"></script> -->
