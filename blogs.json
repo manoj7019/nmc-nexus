@@ -1,6 +1,13 @@
 {
     "blogs" : [
         {
+            "id": "7",
+            "name": "How to answer 'Sell Me This Pen' like The Wolf Of Wall Street",
+            "img": "../images/blog7.png",
+            "para": "",
+            "link": "./blog7.html"
+        },
+        {
             "id": "6",
             "name": "Why 80% of freshers don't get job in their 1st year?",
             "img": "../images/blog6.png",
