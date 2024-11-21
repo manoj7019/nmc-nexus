@@ -1,6 +1,13 @@
 {
     "blogs" : [
         {
+            "id": "8",
+            "name": "How to build a resume that gets you HIRED!",
+            "img": "../images/blog8.png",
+            "para": "",
+            "link": "./blog8.html"
+        },
+        {
             "id": "7",
             "name": "How to answer 'Sell Me This Pen' like The Wolf Of Wall Street",
             "img": "../images/blog7.png",

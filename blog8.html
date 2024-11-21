@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    </script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-T2JMRZKMEL"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="icon" type="image/png" href="./images/nmcfavicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/b3025cfcfa.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=work" />
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-brands/css/uicons-brands.css'>
+    <!-- <link rel="stylesheet" href="./style.css"> -->
+    <title>Namochetana</title>
+    <script defer src="./script.js"></script>
+</head>
+<body>
+    <div class="loader"></div>
+    <div class="topnav">
+        <a href="./index.html" class="active">
+            <img src="./images/logo.png" alt="">
+        </a>
+        <div id="myLinks2">
+            <a href="./getCandidates.html">I need Candidates</a>
+            <a href="./getAJob.html">I need a job</a>
+            <a id="current" href="./blogs.html">Blog</a>
+            <!-- <a href="#about">About Us</a> -->
+            <a href="./contact.html">Contact Us</a>
+        </div>
+      
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars" id="open"></i>
+        </a>
+    </div>
+    <div id="myLinks" class="">
+        <a href="./getCandidates.html">I need Candidates</a>
+        <a href="./getAJob.html">I need a job</a>
+        <a id="current" href="./blogs.html">Blog</a>
+        <!-- <a href="#about">About Us</a> -->
+        <a href="./contact.html">Contact Us</a>
+    </div>
+
+    <div class="home-hero" id="blog-single-hero">
+        <div class="one">
+            <h1 id="blogHeadline" class="">How to build a resume that gets you HIRED!</h1>
+            <p class="">21 Nov, 2024. Thursday</p>
+            <img src="./images/blog8.png" alt="">
+            <p>
+                <b>1. Include Linkedin profile in resume</b><br>
+                As per research from ResumeGo, Including your LinkedIn profile in your resume can drastically increase your chance of landing an interview by 71%. <br>
+                But unfortunately, only 48% of resumes include a linkedIn profile. You can try this tricky demand and supply kind of sale like this as they did in the movie Wolf Of Wall Street.<br><br>
+                <b>2. Include important keywords and skills</b><br>
+                Use ATS friendly keywords which are relevant to your skills and specific job role. Avoid using cliche. Balance both hard and soft skills in description. (People usually neglect soft skills.) <br>
+                Avoid using Crazy, Fluff and Buzzwords. Because they will do more harm than good.<br><br>
+                <b>3. Quantify your results</b><br>
+                Use metrics to describe your achievements instead of using general sentences. <br>
+                You can use X-Y-Z Resume Bullet Formula. Accomplished [X] as measured by [Y], by doing [Z]. <br>
+                Eg: Increased QoQ sales 15% by using Straignt line sales system. <br><br>
+                <b>4. Ideal resume length</b><br>
+                According to TalentWorks data, Keeping your resume in the range of 475 - 600 words increased the chance of getting hired by 2x.<br>
+                77% of resumes are either under or over indexing this range. Moreover this range is the sweet spot for what hiring managers and recruiters want to see. <br><br>
+                <b>5. Don’t use ChatGPT to build</b><br>
+                A resume needs a sense of personality. Nobody likes to read a Robotic resume. Get ideas by doing research, reading blogs, watching youtube etc. and use them as per your requirement.<br>
+                Take some time and build an authentic resume. <br><br>
+
+                Share this post if it's helpful.
+            </p>
+        </div>
+    </div>
+
+    <h1 class="other-article-headline">Other articles...</h1>
+    <div id="blogLinks"></div>
+
+    <div class="footer">
+        <div class="left">
+            <img class="logoW" src="./images/logoW.png" alt="">
+            <a href="https://maps.app.goo.gl/QrfwRMSaPUNsSd369">
+                <p class="footer-para">1st floor, #516 Roshan Palace Apartments, 8th cross MCECHS layout, Dr. Shivramkaranth nagar, Sreerampura, Bengaluru, Karnataka - 560077</p>
+            </a>
+            <a href="./privacyPolicy.html">
+                <p class="footer-copy">&copy; <span id="yearText">2024</span> All rights reserved. Namochetana India Pvt Ltd.</p>
+            </a>
+        </div>
+        <div class="right">
+            <a href="tel:+91-9986742379">
+                <i class="fi fi-rr-phone-call" style="color:white; font-size: 24px;"></i>
+            </a>
+            <a href="https://www.linkedin.com/company/namochetana-india-private-limited/?viewAsMember=true">
+                <i class="fi fi-brands-linkedin" style="color:white; font-size: 24px;"></i>
+            </a>
+            <a href="mailto:support@namochetana.com">
+                <i class="fi fi-rr-envelope" style="color:white; font-size:24px;"></i>
+            </a>
+            <a href="https://wa.me/919986742379">
+                <i class="fi fi-brands-whatsapp" style="color:white; font-size: 24px;"></i>
+            </a>
+            <a href="https://www.instagram.com/namochetanaindia/">
+                <i class="fi fi-brands-instagram" style="color:white; font-size: 24px;"></i>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        window.addEventListener('load', () => {
+            const loader = document.querySelector(".loader");
+
+            loader.classList.add("loader--hidden");
+
+            loader.addEventListener("transitionend", () => {
+                document.body.removeChild(document.querySelector(".loader"));
+            })
+        })
+    </script>
+    <script type="module" src="indBlogScript.js"></script>
+    <!-- <script type="module" src="blogScript.js"></script> -->
+    <!-- <script src="./script.js"></script> -->
+</body>
+</html>
