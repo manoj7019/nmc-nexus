@@ -32,4 +32,6 @@ Blogs.blogs.map(blogg => {
     blogLink.href = `${blogg.link}`
 })
 
+
+
 console.log(allBlogs);

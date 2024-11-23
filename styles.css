@@ -1411,7 +1411,9 @@ td:first-child {
     table {
         font-size: 14px;
     }
-
+    .table-container {
+        padding: 0px;
+    }
     td {
         padding: 8px;
     }

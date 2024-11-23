@@ -83,6 +83,6 @@ function myFunction() {
         x.style.color = "white";
         x.style.transition = "all 1s"
     }
-  }
+}
 
 // CSS Loader 

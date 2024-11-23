@@ -14,4 +14,6 @@ import Blogs from './blogs.json' with {type:"json"}
         
         let blogLinks = document.getElementById('blogLinks');
         blogLinks.appendChild(bLink);
+
+        
     })
