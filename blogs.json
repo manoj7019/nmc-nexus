@@ -1,6 +1,13 @@
 {
     "blogs" : [
         {
+            "id": "9",
+            "name": "Should I Work in a Startup or in a Big Company?",
+            "img": "../images/blog9.png",
+            "para": "",
+            "link": "./blog9.html"
+        },
+        {
             "id": "8",
             "name": "How to build a resume that gets you HIRED!",
             "img": "../images/blog8.png",

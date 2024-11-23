@@ -1315,6 +1315,9 @@ label {
     #blog-single-hero > .one > p {
         text-align: left;
     }
+    #blog-single-hero > .one > #para {
+        padding: 16px;
+    }
     #blog-single-hero > .one > h1 {
         line-height: 40px;
         font-size: 28px;
@@ -1366,4 +1369,51 @@ label {
     to { transform: rotate(1turn) }
 }
 
+/* Blog9.html */
+
+.table-container {
+    max-width: 1200px;
+    margin: 25px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+thead th {
+    background-color: #45085a;
+    color: white;
+    padding: 12px;
+    font-size: 16px;
+}
+
+tbody td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+td:first-child {
+    font-weight: bold;
+    color: #45085a;
+}
+
+@media screen and (max-width: 768px) {
+    table {
+        font-size: 14px;
+    }
+
+    td {
+        padding: 8px;
+    }
+}
 
