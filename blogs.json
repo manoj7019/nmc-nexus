@@ -1,6 +1,13 @@
 {
     "blogs" : [
         {
+            "id": "10",
+            "name": "5 no-brainer tips to format your resume",
+            "img": "../images/blog10.png",
+            "para": "",
+            "link": "./blog10.html"
+        },
+        {
             "id": "9",
             "name": "Should I Work in a Startup or in a Big Company?",
             "img": "../images/blog9.png",
