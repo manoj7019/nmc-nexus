@@ -1152,7 +1152,7 @@ label {
 }
 
 .topnav > a > img {
-    width: 200px;
+    width: 280px;
     height: auto;
 }
 
@@ -1212,7 +1212,7 @@ label {
     }
 
     .topnav > a > img {
-        width: 120px;
+        width: 200px;
         height: auto;
     }
 }
