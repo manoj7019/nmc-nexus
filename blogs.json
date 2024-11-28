@@ -1,6 +1,13 @@
 {
     "blogs" : [
         {
+            "id": "11",
+            "name": "What's the fastest way to learn any skill?",
+            "img": "../images/blog11.png",
+            "para": "",
+            "link": "./blog11.html"
+        },
+        {
             "id": "10",
             "name": "5 no-brainer tips to format your resume",
             "img": "../images/blog10.png",
