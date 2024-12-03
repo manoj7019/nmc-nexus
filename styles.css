@@ -1419,3 +1419,25 @@ td:first-child {
     }
 }
 
+#leadGenSubHead {
+    text-align: center;
+    color: #ff4500;
+}
+
+#lead-gen-form {
+    width: 50%;
+    margin: 0px 0 50px 0;
+}
+
+#lead-gen-form button {
+    font-size: 36px;
+    margin: 40px 0;
+    background-color: #ff4500;
+}
+
+#redarrows {
+    transform: rotate(90deg);
+    width: 100px;
+    /* margin-top: -50px; */
+}
+
