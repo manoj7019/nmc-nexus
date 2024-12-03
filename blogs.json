@@ -1,6 +1,13 @@
 {
     "blogs" : [
         {
+            "id": "12",
+            "name": "How to negotiate the salary to higher range?",
+            "img": "../images/blog12.png",
+            "para": "",
+            "link": "./blog12.html"
+        },
+        {
             "id": "11",
             "name": "What's the fastest way to learn any skill?",
             "img": "../images/blog11.png",
