@@ -1114,9 +1114,12 @@ label {
         font-size: 24px;
         text-align: center;
     }
-    .success > button {
-        width: 90%;
+    .success > a > button {
+        width: 100%;
         padding: 12px;
+        font-size: 24px;
+        border-radius: 12px;
+        background-color: #ff4500;
     }
     .success > img {
         width: 100vw;
