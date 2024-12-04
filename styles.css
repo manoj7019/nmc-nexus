@@ -1093,10 +1093,10 @@ label {
     width: 500px;
 }
 
-.success > button {
-    width: 50%;
+.success > a > button {
+    width: 100%;
     padding: 12px 32px;
-    font-size: 24px;
+    font-size: 32px;
     border-radius: 12px;
     background-color: #ff4500;
     color: white;
@@ -1118,8 +1118,6 @@ label {
         width: 100%;
         padding: 12px;
         font-size: 24px;
-        border-radius: 12px;
-        background-color: #ff4500;
     }
     .success > img {
         width: 100vw;
