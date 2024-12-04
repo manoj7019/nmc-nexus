@@ -1073,14 +1073,16 @@ label {
   
 /* Success page */
 .success {
-    padding: 48px;
+    padding: 48px 144px;
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 32px;
     align-items: center;
 }
 .success > h1 {
     color: #45085a;
+    font-size: 48px;
+    text-align: center;
 }
 
 .success > p {
@@ -1088,21 +1090,21 @@ label {
 }
 
 .success > img {
-    width: 200px;
+    width: 500px;
 }
 
 .success > button {
-    width: 25%;
+    width: 50%;
     padding: 12px 32px;
     font-size: 24px;
     border-radius: 12px;
-    background-color: #ff7919;
+    background-color: #ff4500;
     color: white;
 }
 
 @media only screen and (max-width: 768px) {
     .success {
-        padding: 48px 16px;
+        padding: 32px 16px;
     }
     .success > p {
         font-size: 18px;
@@ -1113,8 +1115,11 @@ label {
         text-align: center;
     }
     .success > button {
-        width: 80%;
+        width: 90%;
         padding: 12px;
+    }
+    .success > img {
+        width: 100vw;
     }
 }
 
@@ -1426,6 +1431,10 @@ td:first-child {
     color: #ff4500;
 }
 
+#leadGenSecHead {
+    color: black;
+}
+
 #lead-gen-form {
     width: 50%;
     margin: 0px 0 50px 0;
@@ -1447,6 +1456,10 @@ td:first-child {
     #leadGenSubHead {
         font-size: 24px;
     }
+    /* #leadGenSecHead {
+        font-size: 24px;
+        line-height: 0px;
+    } */
     #blog-single-hero > .one > #redarrows {
         width: 50px;
         height: auto;
