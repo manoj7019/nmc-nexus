@@ -1,6 +1,13 @@
 {
     "blogs" : [
         {
+            "id": "13",
+            "name": "Job market trends of Bengaluru 2025, every skilled guy must know.",
+            "img": "../images/blog13.png",
+            "para": "",
+            "link": "./blog13.html"
+        },
+        {
             "id": "12",
             "name": "How to negotiate the salary to higher range?",
             "img": "../images/blog12.png",
