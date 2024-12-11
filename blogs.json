@@ -1,6 +1,13 @@
 {
     "blogs" : [
         {
+            "id": "14",
+            "name": "Do Soft Skills Matter More Than Technical Skills?",
+            "img": "../images/blog14.png",
+            "para": "",
+            "link": "./blog14.html"
+        },
+        {
             "id": "13",
             "name": "Job market trends of Bengaluru 2025, every skilled guy must know.",
             "img": "../images/blog13.png",
